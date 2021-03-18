@@ -1,12 +1,12 @@
 package com.codewithchang.awsimageupload.bucket;
 
-public enum BucketNum {
+public enum BucketName {
 
     PROFILE_IMAGE("codewithchang-image-upload-123");
 
     private final String bucketName;
 
-    BucketNum(String bucketName) {
+    BucketName(String bucketName) {
         this.bucketName = bucketName;
     }
 
