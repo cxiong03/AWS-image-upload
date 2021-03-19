@@ -21,7 +21,10 @@ const UserProfile = () => {
 
     return (
       <div key={index}>
-        {/* <{TODO: profile image} */}
+        {
+          userProfile.userProfileId ? (<img src = {
+            `http://localhost:8080/api/v1/user-profile/${userProfile.userProfileId}/image/download` } 
+          />) : null}
         <br />
         <br />
         <h1>{userProfile.userName}</h1>
